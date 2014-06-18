@@ -30,6 +30,16 @@
 		615746CC1924B5C100D05889 /* BlanksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 615746CB1924B5C100D05889 /* BlanksViewController.m */; };
 		615746CF1924C78800D05889 /* kapak_batu.png in Resources */ = {isa = PBXBuildFile; fileRef = 615746CE1924C78800D05889 /* kapak_batu.png */; };
 		615746D21924CB8600D05889 /* CompleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 615746D11924CB8600D05889 /* CompleteViewController.m */; };
+		617F6F5B194FF86800AF480B /* tabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 617F6F5A194FF86700AF480B /* tabbarViewController.m */; };
+		617F6F5E195145D700AF480B /* icolist@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 617F6F5C195145D700AF480B /* icolist@2x.png */; };
+		617F6F5F195145D700AF480B /* iconear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 617F6F5D195145D700AF480B /* iconear@2x.png */; };
+		617F6F62195145F100AF480B /* icolist.png in Resources */ = {isa = PBXBuildFile; fileRef = 617F6F60195145F100AF480B /* icolist.png */; };
+		617F6F63195145F100AF480B /* iconear.png in Resources */ = {isa = PBXBuildFile; fileRef = 617F6F61195145F100AF480B /* iconear.png */; };
+		617F6F69195163D800AF480B /* muzium_alam_semula_jadi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 617F6F64195163D800AF480B /* muzium_alam_semula_jadi.jpg */; };
+		617F6F6A195163D800AF480B /* Muzium_Automobil_Nasional_Litar_Antarabangsa_Sepang.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 617F6F65195163D800AF480B /* Muzium_Automobil_Nasional_Litar_Antarabangsa_Sepang.jpg */; };
+		617F6F6B195163D800AF480B /* muzium_kota_kuala_kedah.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 617F6F66195163D800AF480B /* muzium_kota_kuala_kedah.jpg */; };
+		617F6F6C195163D800AF480B /* muzium_perak.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 617F6F67195163D800AF480B /* muzium_perak.jpg */; };
+		617F6F6D195163D800AF480B /* muzium_seni_bina_malaysia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 617F6F68195163D800AF480B /* muzium_seni_bina_malaysia.jpg */; };
 		618BFCA019268C2E00974B44 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 618BFC9F19268C2E00974B44 /* placeholder.png */; };
 		618BFCA61926953300974B44 /* page.png in Resources */ = {isa = PBXBuildFile; fileRef = 618BFCA51926953300974B44 /* page.png */; };
 		618BFCA81927DEB300974B44 /* loadview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 618BFCA71927DEB300974B44 /* loadview.xib */; };
@@ -73,6 +83,8 @@
 		61ACDF9D1945BE9E00FBC095 /* xploreseumDB.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 61ACDF9C1945BE9E00FBC095 /* xploreseumDB.sqlite */; };
 		61ACDF9F1946164900FBC095 /* bg640x1008.png in Resources */ = {isa = PBXBuildFile; fileRef = 61ACDF9E1946164900FBC095 /* bg640x1008.png */; };
 		61ACDFA219461D3800FBC095 /* searchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61ACDFA119461D3800FBC095 /* searchViewController.m */; };
+		61ACDFA719480D1200FBC095 /* utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 61ACDFA419480B8C00FBC095 /* utilities.m */; };
+		61ACDFAA19480DCA00FBC095 /* locDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61ACDFA919480DCA00FBC095 /* locDetailViewController.m */; };
 		61AD2E9819386B7B00D6B29A /* btnback@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61AD2E9419386B7B00D6B29A /* btnback@2x.png */; };
 		61AD2E9919386B7B00D6B29A /* btnbackbtm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61AD2E9519386B7B00D6B29A /* btnbackbtm@2x.png */; };
 		61AD2E9A19386B7B00D6B29A /* btnnext@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61AD2E9619386B7B00D6B29A /* btnnext@2x.png */; };
@@ -144,6 +156,17 @@
 		615746CE1924C78800D05889 /* kapak_batu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kapak_batu.png; sourceTree = "<group>"; };
 		615746D01924CB8600D05889 /* CompleteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompleteViewController.h; sourceTree = "<group>"; };
 		615746D11924CB8600D05889 /* CompleteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompleteViewController.m; sourceTree = "<group>"; };
+		617F6F59194FF86700AF480B /* tabbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tabbarViewController.h; sourceTree = "<group>"; };
+		617F6F5A194FF86700AF480B /* tabbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tabbarViewController.m; sourceTree = "<group>"; };
+		617F6F5C195145D700AF480B /* icolist@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icolist@2x.png"; sourceTree = "<group>"; };
+		617F6F5D195145D700AF480B /* iconear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconear@2x.png"; sourceTree = "<group>"; };
+		617F6F60195145F100AF480B /* icolist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icolist.png; sourceTree = "<group>"; };
+		617F6F61195145F100AF480B /* iconear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconear.png; sourceTree = "<group>"; };
+		617F6F64195163D800AF480B /* muzium_alam_semula_jadi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = muzium_alam_semula_jadi.jpg; sourceTree = "<group>"; };
+		617F6F65195163D800AF480B /* Muzium_Automobil_Nasional_Litar_Antarabangsa_Sepang.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Muzium_Automobil_Nasional_Litar_Antarabangsa_Sepang.jpg; sourceTree = "<group>"; };
+		617F6F66195163D800AF480B /* muzium_kota_kuala_kedah.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = muzium_kota_kuala_kedah.jpg; sourceTree = "<group>"; };
+		617F6F67195163D800AF480B /* muzium_perak.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = muzium_perak.jpg; sourceTree = "<group>"; };
+		617F6F68195163D800AF480B /* muzium_seni_bina_malaysia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = muzium_seni_bina_malaysia.jpg; sourceTree = "<group>"; };
 		618BFC9F19268C2E00974B44 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 		618BFCA51926953300974B44 /* page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page.png; sourceTree = "<group>"; };
 		618BFCA71927DEB300974B44 /* loadview.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = loadview.xib; path = ../loadview.xib; sourceTree = "<group>"; };
@@ -207,6 +230,10 @@
 		61ACDF9E1946164900FBC095 /* bg640x1008.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg640x1008.png; sourceTree = "<group>"; };
 		61ACDFA019461D3800FBC095 /* searchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = searchViewController.h; sourceTree = "<group>"; };
 		61ACDFA119461D3800FBC095 /* searchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = searchViewController.m; sourceTree = "<group>"; };
+		61ACDFA319480B8C00FBC095 /* utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utilities.h; sourceTree = "<group>"; };
+		61ACDFA419480B8C00FBC095 /* utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = utilities.m; sourceTree = "<group>"; };
+		61ACDFA819480DCA00FBC095 /* locDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = locDetailViewController.h; sourceTree = "<group>"; };
+		61ACDFA919480DCA00FBC095 /* locDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = locDetailViewController.m; sourceTree = "<group>"; };
 		61AD2E9419386B7B00D6B29A /* btnback@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnback@2x.png"; sourceTree = "<group>"; };
 		61AD2E9519386B7B00D6B29A /* btnbackbtm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnbackbtm@2x.png"; sourceTree = "<group>"; };
 		61AD2E9619386B7B00D6B29A /* btnnext@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnnext@2x.png"; sourceTree = "<group>"; };
@@ -333,9 +360,29 @@
 			name = "question template";
 			sourceTree = "<group>";
 		};
+		617F6F6E195163F900AF480B /* image muzium */ = {
+			isa = PBXGroup;
+			children = (
+				617F6F64195163D800AF480B /* muzium_alam_semula_jadi.jpg */,
+				617F6F65195163D800AF480B /* Muzium_Automobil_Nasional_Litar_Antarabangsa_Sepang.jpg */,
+				617F6F66195163D800AF480B /* muzium_kota_kuala_kedah.jpg */,
+				617F6F67195163D800AF480B /* muzium_perak.jpg */,
+				617F6F68195163D800AF480B /* muzium_seni_bina_malaysia.jpg */,
+				61ACDF961945BE7600FBC095 /* muzim_negeri_sembilan.png */,
+				61ACDF971945BE7600FBC095 /* muzium_johor.png */,
+				61ACDF981945BE7600FBC095 /* muzium_negara_malaysia.png */,
+			);
+			name = "image muzium";
+			sourceTree = "<group>";
+		};
 		61A86B88192360E50054E651 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				617F6F6E195163F900AF480B /* image muzium */,
+				617F6F60195145F100AF480B /* icolist.png */,
+				617F6F61195145F100AF480B /* iconear.png */,
+				617F6F5C195145D700AF480B /* icolist@2x.png */,
+				617F6F5D195145D700AF480B /* iconear@2x.png */,
 				61AA55801943844B002E724F /* btnlogin.png */,
 				61AA55811943844B002E724F /* txtboxuserpassw.png */,
 				61AA557C19438432002E724F /* btnlogin@2x.png */,
@@ -376,9 +423,6 @@
 				618BFCA51926953300974B44 /* page.png */,
 				618BFC9F19268C2E00974B44 /* placeholder.png */,
 				615746CE1924C78800D05889 /* kapak_batu.png */,
-				61ACDF961945BE7600FBC095 /* muzim_negeri_sembilan.png */,
-				61ACDF971945BE7600FBC095 /* muzium_johor.png */,
-				61ACDF981945BE7600FBC095 /* muzium_negara_malaysia.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -386,6 +430,7 @@
 		61A8AB751920902B00898B61 = {
 			isa = PBXGroup;
 			children = (
+				61ACDFA619480B9200FBC095 /* utilities */,
 				612FA183193D96460086C792 /* MBProgressHud */,
 				61A86B88192360E50054E651 /* images */,
 				615746BB192479F700D05889 /* TPKeyboardAvoiding */,
@@ -437,13 +482,13 @@
 		61A8AB871920902B00898B61 /* Xploreseum */ = {
 			isa = PBXGroup;
 			children = (
-				615746CD1924B5CF00D05889 /* question template */,
-				61ACDF931945B84900FBC095 /* TabBar */,
 				61AB2A131929AE6500A455B3 /* Main.storyboard */,
 				61A8AB901920902B00898B61 /* AppDelegate.h */,
+				61A8AB911920902B00898B61 /* AppDelegate.m */,
+				615746CD1924B5CF00D05889 /* question template */,
+				61ACDF931945B84900FBC095 /* TabBar */,
 				61AD2EAC193B67B200D6B29A /* loginViewController.h */,
 				61AD2EAD193B67B200D6B29A /* loginViewController.m */,
-				61A8AB911920902B00898B61 /* AppDelegate.m */,
 				612FA186193D99970086C792 /* RegisterViewController.h */,
 				612FA187193D99970086C792 /* RegisterViewController.m */,
 				618BFCA71927DEB300974B44 /* loadview.xib */,
@@ -459,6 +504,8 @@
 				61AB2A171929B51A00A455B3 /* beforeShareViewController.m */,
 				61C31FE4192D9B3700128403 /* inBetweenViewController.h */,
 				61C31FE5192D9B3700128403 /* inBetweenViewController.m */,
+				61ACDFA819480DCA00FBC095 /* locDetailViewController.h */,
+				61ACDFA919480DCA00FBC095 /* locDetailViewController.m */,
 				61A8AB991920902B00898B61 /* Images.xcassets */,
 				61A8AB881920902B00898B61 /* Supporting Files */,
 			);
@@ -500,12 +547,23 @@
 				61ACDF901945B83D00FBC095 /* listCell.h */,
 				61ACDF911945B83D00FBC095 /* listCell.m */,
 				61ACDF941945B86400FBC095 /* listCell.xib */,
+				617F6F59194FF86700AF480B /* tabbarViewController.h */,
+				617F6F5A194FF86700AF480B /* tabbarViewController.m */,
 				61ACDF8D1945B5FE00FBC095 /* ListViewController.h */,
 				61ACDF8E1945B5FE00FBC095 /* ListViewController.m */,
 				61ACDFA019461D3800FBC095 /* searchViewController.h */,
 				61ACDFA119461D3800FBC095 /* searchViewController.m */,
 			);
 			name = TabBar;
+			sourceTree = "<group>";
+		};
+		61ACDFA619480B9200FBC095 /* utilities */ = {
+			isa = PBXGroup;
+			children = (
+				61ACDFA319480B8C00FBC095 /* utilities.h */,
+				61ACDFA419480B8C00FBC095 /* utilities.m */,
+			);
+			name = utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -587,6 +645,7 @@
 				61AD2EA019386C9500D6B29A /* btnback.png in Resources */,
 				61AD2EA219386C9500D6B29A /* btnnext.png in Resources */,
 				61AD2E9B19386B7B00D6B29A /* btnnextbtm@2x.png in Resources */,
+				617F6F5F195145D700AF480B /* iconear@2x.png in Resources */,
 				61AD2EAA193B587800D6B29A /* btnother@2x.png in Resources */,
 				61ACDF9B1945BE7600FBC095 /* muzium_negara_malaysia.png in Resources */,
 				61AD2E9919386B7B00D6B29A /* btnbackbtm@2x.png in Resources */,
@@ -598,12 +657,16 @@
 				612A6ED21934848C0036B813 /* answerselect.png in Resources */,
 				61ACDF9A1945BE7600FBC095 /* muzium_johor.png in Resources */,
 				61ACDF951945B86400FBC095 /* listCell.xib in Resources */,
+				617F6F6B195163D800AF480B /* muzium_kota_kuala_kedah.jpg in Resources */,
 				61AA55831943844B002E724F /* txtboxuserpassw.png in Resources */,
 				61A8AB9A1920902B00898B61 /* Images.xcassets in Resources */,
 				612A6EC919347B4C0036B813 /* bg320x504.png in Resources */,
+				617F6F69195163D800AF480B /* muzium_alam_semula_jadi.jpg in Resources */,
 				61AA557E19438432002E724F /* btnlogin@2x.png in Resources */,
+				617F6F6D195163D800AF480B /* muzium_seni_bina_malaysia.jpg in Resources */,
 				61AA55821943844B002E724F /* btnlogin.png in Resources */,
 				618BFCA61926953300974B44 /* page.png in Resources */,
+				617F6F6A195163D800AF480B /* Muzium_Automobil_Nasional_Litar_Antarabangsa_Sepang.jpg in Resources */,
 				61A8AB8C1920902B00898B61 /* InfoPlist.strings in Resources */,
 				61AB2A1C1929C2BC00A455B3 /* tera_air.png in Resources */,
 				612FA18A193DA9270086C792 /* profile_placeholder.gif in Resources */,
@@ -614,7 +677,9 @@
 				61A0199919266E4800A5CBA4 /* Icon-Small@2x.png in Resources */,
 				612A6ECD193482CC0036B813 /* bg640x1008xxxxx.png in Resources */,
 				612A6ED11934848C0036B813 /* answer.png in Resources */,
+				617F6F6C195163D800AF480B /* muzium_perak.jpg in Resources */,
 				615746CF1924C78800D05889 /* kapak_batu.png in Resources */,
+				617F6F5E195145D700AF480B /* icolist@2x.png in Resources */,
 				61AD2EA119386C9500D6B29A /* btnbackbtm.png in Resources */,
 				612A6ECB19347FD70036B813 /* logomid1.png in Resources */,
 				61AB2A1A1929B5A700A455B3 /* frame.png in Resources */,
@@ -623,7 +688,9 @@
 				61ACDF9D1945BE9E00FBC095 /* xploreseumDB.sqlite in Resources */,
 				61AD2EA319386C9500D6B29A /* btnnextbtm.png in Resources */,
 				612A6ED31934848C0036B813 /* enter.png in Resources */,
+				617F6F63195145F100AF480B /* iconear.png in Resources */,
 				61AD2E9A19386B7B00D6B29A /* btnnext@2x.png in Resources */,
+				617F6F62195145F100AF480B /* icolist.png in Resources */,
 				612FA185193D98C40086C792 /* fblogin.png in Resources */,
 				61AD2EC6193C69AC00D6B29A /* selfie.png in Resources */,
 			);
@@ -647,6 +714,7 @@
 				610AC76C1923260000520A5F /* DataTable.m in Sources */,
 				61A8ABBA1920917900898B61 /* locationSelectorViewController.m in Sources */,
 				61ACDF8F1945B5FE00FBC095 /* ListViewController.m in Sources */,
+				61ACDFA719480D1200FBC095 /* utilities.m in Sources */,
 				61A8AB981920902B00898B61 /* ViewController.m in Sources */,
 				61ACDF921945B83D00FBC095 /* listCell.m in Sources */,
 				615746C7192479F700D05889 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
@@ -667,7 +735,9 @@
 				615746C5192479F700D05889 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				615746CC1924B5C100D05889 /* BlanksViewController.m in Sources */,
 				61AD2EAE193B67B200D6B29A /* loginViewController.m in Sources */,
+				61ACDFAA19480DCA00FBC095 /* locDetailViewController.m in Sources */,
 				61A86B8B1923856A0054E651 /* ImageBlanksViewController.m in Sources */,
+				617F6F5B194FF86800AF480B /* tabbarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

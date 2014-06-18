@@ -143,9 +143,9 @@
             CLLocation *coord = [[CLLocation alloc]initWithLatitude:latitude longitude:longitude];
             
             CLLocationDistance distance = [currentLocation distanceFromLocation:coord];
-            NSString *dst = [NSString stringWithFormat:@"%f",distance];
+           // NSString *dst = [NSString stringWithFormat:@"%f",distance];
             
-            NSString *str = [NSString stringWithFormat:@"UPDATE location_tbl set distance = '%@' where id = %@",dst,[row objectAtIndex:0]];
+            NSString *str = [NSString stringWithFormat:@"UPDATE location_tbl set distance = '%f' where id = %@",distance,[row objectAtIndex:0]];
             
             int i;
             i = [_db ExecuteNonQuery:str];

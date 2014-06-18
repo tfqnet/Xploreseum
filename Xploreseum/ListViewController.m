@@ -10,6 +10,7 @@
 #import "listCell.h"
 #import "DataTable.h"
 #import "DBController.h"
+#import "locDetailViewController.h"
 
 @interface ListViewController ()
 
@@ -32,7 +33,11 @@
 {
     [super viewDidLoad];
     
-    [[self navigationController] setNavigationBarHidden:NO animated:YES];
+    self.tabBarController.navigationItem.hidesBackButton = YES;
+    self.navigationItem.hidesBackButton = YES;
+    
+    self.navigationItem.title = @"All museum";
+       [[self navigationController] setNavigationBarHidden:NO animated:YES];
     
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new]
                                                   forBarMetrics:UIBarMetricsDefault];
@@ -52,8 +57,14 @@
     
     
     
+    UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg640x1008.png"]];
+    //[backgroundView setFrame:CGRectMake(0, 0, 320, 568)];
+    //[self.view insertSubview:backgroundView atIndex:0];
+    [listCollectionView setBackgroundView:backgroundView];
     // Do any additional setup after loading the view.
 }
+
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -88,7 +99,23 @@
 
 
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+   
 
+    NSArray *row = [_table.rows objectAtIndex:indexPath.row];
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    
+    locDetailViewController *loc = [storyboard instantiateViewControllerWithIdentifier:@"detail"];
+    loc.locID = [row objectAtIndex:0];
+    
+    [self.navigationController pushViewController:loc animated:YES];
+
+    
+    
+    
+}
 
 
 

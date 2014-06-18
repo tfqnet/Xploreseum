@@ -118,13 +118,14 @@
     UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
     
    
-   // [self imageWithImage:chosenImage scaledToSize:CGSizeMake(612, 612)];
+    [self imageWithImage:chosenImage scaledToSize:CGSizeMake(612, 612)];
     
     [self merge:chosenImage];
     
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSString *loc = [defaults objectForKey:@"location"];
+    NSLog(@"location %@",loc);
     
     UILabel  *xlabel = [[UILabel alloc] init];//initWithFrame:CGRectMake(_resultImg.frame.size.width/2-50, 5, 100, 35)];
     xlabel.font = [UIFont fontWithName:@"IowanOldStyle-Bold" size:40.0];
@@ -134,7 +135,7 @@
     xlabel.adjustsFontSizeToFitWidth = YES;
     xlabel.textAlignment = NSTextAlignmentCenter;
     //xlabel.text = [NSString stringWithFormat:@"I have completed the challenge at %@",loc];
-    xlabel.text = [NSString stringWithFormat:@"%@\nChallenge completed",loc];
+    xlabel.text = [NSString stringWithFormat:@"%@,\nChallenge completed",loc];
     
     
 
@@ -145,7 +146,7 @@
     UIGraphicsBeginImageContext(size);
     
     [_resultImg.image drawAtPoint:CGPointMake(0,0)];
-    //[self imageWithImage:_resultImg.image scaledToSize:CGSizeMake(612, 612)];
+    [self imageWithImage:_resultImg.image scaledToSize:CGSizeMake(612, 612)];
     
     
     [xlabel drawTextInRect:CGRectMake(size.width/2-100, 20, 200, 90)];

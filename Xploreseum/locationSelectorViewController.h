@@ -12,7 +12,7 @@
 
 
 @class  DataTable,DBController;
-@interface locationSelectorViewController : UIViewController<CLLocationManagerDelegate,iCarouselDataSource,iCarouselDelegate>{
+@interface locationSelectorViewController : UIViewController<CLLocationManagerDelegate,iCarouselDataSource,iCarouselDelegate,UITabBarControllerDelegate>{
     
     
     CLGeocoder *geocoder;

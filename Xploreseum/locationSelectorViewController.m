@@ -14,6 +14,7 @@
 #import "ImageBlanksViewController.h"
 #import "BlanksViewController.h"
 #import "CompleteViewController.h"
+#import "locDetailViewController.h"
 
 
 
@@ -50,7 +51,7 @@
     }
     self.db = [DBController sharedDatabaseController:@"xploreseumDB.sqlite"];
     
-    _table = [_db ExecuteQuery:@"SELECT * from location_tbl where status='yes'"];
+    _table = [_db ExecuteQuery:@"SELECT * from location_tbl where status='yes' and distance < 300"];
     NSLog(@"database %@",_table.rows);
 
     
@@ -59,48 +60,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     [[self navigationController] setNavigationBarHidden:NO animated:YES];
-    _isNear=NO;
     
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new]
                                                   forBarMetrics:UIBarMetricsDefault];
     self.navigationController.navigationBar.shadowImage = [UIImage new];
     self.navigationController.navigationBar.translucent = YES;
     self.navigationController.view.backgroundColor = [UIColor clearColor];
-    
-    
-    UIImage* image = [UIImage imageNamed:@"btnbackbtm.png"];
-    CGRect frame = CGRectMake(0, 0, 45, 40);
-    UIButton* someButton = [[UIButton alloc] initWithFrame:frame];
-    [someButton setBackgroundImage:image forState:UIControlStateNormal];
-    [someButton setTitle:@" Back" forState:UIControlStateNormal];
-    someButton.titleLabel.font = [UIFont fontWithName:@"IowanOldStyle-Bold" size:12];
-    [someButton setTitleColor:[UIColor colorWithRed:79.0/255.0 green:38.0/255.0 blue:9.0/255.0 alpha:1.0] forState:UIControlStateNormal];
-    [someButton addTarget:self action:@selector(btnPressed) forControlEvents:UIControlEventTouchDown];
-    
-    [someButton setShowsTouchWhenHighlighted:YES];
-    
-    UIBarButtonItem* someBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:someButton];
-    [self.navigationItem setLeftBarButtonItem:someBarButtonItem];
-    
-    
-    
-    UIImage* imager = [UIImage imageNamed:@"btnotherbtm.png"];
-    CGRect framer = CGRectMake(0, 0, 45, 40);
-    someButtonr = [[UIButton alloc] initWithFrame:framer];
-    [someButtonr setBackgroundImage:imager forState:UIControlStateNormal];
-    [someButtonr setTitle:@"Near" forState:UIControlStateNormal];
-    someButtonr.titleLabel.font = [UIFont fontWithName:@"IowanOldStyle-Bold" size:12];
-    [someButtonr setTitleColor:[UIColor colorWithRed:79.0/255.0 green:38.0/255.0 blue:9.0/255.0 alpha:1.0] forState:UIControlStateNormal];
-    [someButtonr addTarget:self action:@selector(rightButton) forControlEvents:UIControlEventTouchDown];
-    
-    [someButtonr setShowsTouchWhenHighlighted:YES];
-    
-    UIBarButtonItem* someBarButtonItemr = [[UIBarButtonItem alloc] initWithCustomView:someButtonr];
-    [self.navigationItem setRightBarButtonItem:someBarButtonItemr];
-    
-    
-    //self.navigationItem.title = @"Xploreseum";
+      
+   
+   
     
     UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg640x1008.png"]];
     [backgroundView setFrame:CGRectMake(0, 0, 320, 568)];
@@ -125,21 +95,15 @@
     
     // Do any additional setup after loading the view.
 }
--(void)rightButton{
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
     
-    if([someButtonr.titleLabel.text isEqualToString:@"Near"]){
-        [someButtonr setTitle:@"List" forState:UIControlStateNormal];
-        _isNear=NO;
-        [_carousel reloadData];
-    }
-    else{
-        [someButtonr setTitle:@"Near" forState:UIControlStateNormal];
-        _isNear=YES;
-        [_carousel reloadData];
-    }
-    
-    
+   
 }
+
+
+
 
 
 - (NSUInteger)numberOfItemsInCarousel:(iCarousel *)carousel
@@ -154,11 +118,7 @@
     return  num;
 }
 
--(void)btnPressed{
-    
-    [self.navigationController popToRootViewControllerAnimated:YES];
-    
-}
+
 
 
 
@@ -202,6 +162,17 @@
     
     NSInteger num = [_carousel indexOfItemViewOrSubview:sender];
     
+    NSArray *row = [_table.rows objectAtIndex:num];
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    locDetailViewController *loc = [storyboard instantiateViewControllerWithIdentifier:@"detail"];
+    
+    loc.locID = [row objectAtIndex:0];
+    //loc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:loc animated:YES];
+    
+    /*
     NSLog(@"%li",(long)num);
     NSArray *row = [_table.rows objectAtIndex:num];
     
@@ -233,9 +204,14 @@
         [self start];
         
     }
-    
+    */
     
 }
+
+- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController{
+    return NO;
+}
+
 
 
 
